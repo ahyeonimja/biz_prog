@@ -27,3 +27,13 @@ with st.echo():
 
 st.latex("\int_a^b f(x)dx")
 "$$\int_a^b f(x)dx$$"
+
+'### :orange[이미지: st.image()]'
+st.image("./data/python설명.jpeg", caption="파이썬 로고", width=500)
+
+'### :orange[오디오: st.audio()]'
+st.audio("./data/해변.mp3", format="audio/mpeg", loop=True)
+
+'### :orange[동영상: st.video()]'
+video_file = open("./data/해파리.mp4", "rb")
+video_bytes = video_file.read()
